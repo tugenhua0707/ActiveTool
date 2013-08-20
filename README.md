@@ -367,6 +367,25 @@ ActiveTool
 			}
 		}
 	};
+
 	return ActiveTool;
 
 })(window);
+
+
+页面HTML代码如下：
+   
+   <div style="width:100%;">
+   	<div style="height:2000px;"></div>
+        <div class="go-top" id="J_gotop">
+		<a title="返回顶部" href="#" class="gotop" data-spm-anchor-id="0.0.0.0">返回顶部</a>
+	</div> 
+   </div>
+   
+javascript调用方式如下：
+
+   <script type="text/javascript">
+	new ActiveTool('#J_gotop',{topLink:'.gotop',markupType:2,YAlign: {
+		bottom:200
+	}});
+    </script>
