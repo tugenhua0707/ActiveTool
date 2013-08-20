@@ -8,6 +8,7 @@ ActiveTool
  2. !!! css中需设置{width:**;bottom:**;}，否则后果自负
  3.
  4. 默认参数：
+
 	        topLink:'.top', //toplink.
 
 		markupType: 0, //默认为0：居中，1：居左，2：居右
@@ -36,47 +37,76 @@ ActiveTool
 
 
  5. INSTANCE：
+
 		//水平居中，顶部(间隔用YAlign: {top:0}设置,默认为0)
 		new ActiveTool('#divbar',{
+		
 			topLink:'.top',//class or id
+			
 			markupType: 0
+			
 		});
+		
 		//水平居中，底部(间隔用YAlign: {bottom:'10px'}设置)
 		new ActiveTool('#divbar',{
+		
 			topLink:'.top',//class or id
+			
 			markupType: 0,
+			
 			YAlign: {
 				bottom:0
 			}
+			
 		});
+		
 		//水平居左靠近主体左侧，顶部(间隔用YAlign: {top:0}设置)
 		new ActiveTool('#divbar',{
+		
 			topLink:'.top',//class or id
+			
 			markupType: 1
+			
 		});
+		
 		//水平居左靠近主体左侧，底部(间隔用YAlign: {bottom:'10px'}设置)
 		new ActiveTool('#divbar',{
+		
 			topLink:'.top',//class or id
+			
 			markupType: 1,
+			
 			YAlign: {
 				bottom:0
 			}
+			
 		});
+		
 		//水平居左，顶部(间隔用YAlign: {top:0}设置),左侧距离用style
 		new ActiveTool('#divbar',{
+		
 			topLink:'.top',//class or id
+			
 			markupType: -1,
+			
 			left:'5px'
+			
 		});
+		
 		//水平居左，底部(间隔用YAlign: {bottom:'10px'}设置),左侧距离用left
 		new ActiveTool('#divbar',{
+		
 			topLink:'.top',//class or id
+			
 			markupType: -1,
+			
 			left:'5px',
+			
 			YAlign: {
 				bottom:0
 			}
 		});
+		
 
 	****水平居右与水平居左类似****
 	
