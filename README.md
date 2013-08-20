@@ -367,7 +367,9 @@ ActiveTool
 			}
 		}
 	};
+
 	return ActiveTool;
+	
 })(window);
 
 
