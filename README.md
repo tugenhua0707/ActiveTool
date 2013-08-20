@@ -3,11 +3,11 @@ ActiveTool
 
                                                       jquery浮动条组件
 
-/**
- * Setting:
- * !!! css中需设置{width:**;bottom:**;}，否则后果自负，哈哈
- *
- * 默认参数：
+
+ 1. Setting:
+ 2. !!! css中需设置{width:**;bottom:**;}，否则后果自负，哈哈
+ 3.
+ 4. 默认参数：
 		topLink:'.top', //toplink
 		markupType: 0, //默认为0：居中，1：居左，2：居右
 		contentWidth: 1000, //布局宽度
@@ -25,7 +25,7 @@ ActiveTool
 
 
 
- * INSTANCE：
+ 5. INSTANCE：
 		//水平居中，顶部(间隔用YAlign: {top:0}设置,默认为0)
 		new ActiveTool('#divbar',{
 			topLink:'.top',//class or id
@@ -69,8 +69,7 @@ ActiveTool
 		});
 
 	****水平居右与水平居左类似****
+	
+        2013-8-20 tugenhua@126.com
+ 
 
- * @change log:
- * 2013-8-20 tugenhua@126.com
- *
- */
