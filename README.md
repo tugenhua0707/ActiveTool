@@ -116,19 +116,27 @@ ActiveTool
         var ActiveTool = (function(win,undefined){
         
 	   var doc = document,
+	   
 		docBody = doc.body,
+		
 		isIE = navigator.userAgent.match(/MSIE/)!= null,
+		
 		isIE6 = navigator.userAgent.match(/MSIE 6.0/)!= null,
+		
 		docelem = doc.documentElement || docBody;
 
 	function ActiveTool(container,config){
+	
 		var self = this;
+		
 		if(!(self instanceof ActiveTool)){
 			return new ActiveTool(container,config);
 		}
+		
 		config = $.extend(ActiveTool.Config,config);
 
 		self.config = config || {};
+		
 		// 匹配传参container
 		if($.isPlainObject(container)){
 			self.container = container;
