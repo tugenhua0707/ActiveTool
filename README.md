@@ -114,7 +114,8 @@ ActiveTool
  
         
         var ActiveTool = (function(win,undefined){
-	var doc = document,
+        
+	   var doc = document,
 		docBody = doc.body,
 		isIE = navigator.userAgent.match(/MSIE/)!= null,
 		isIE6 = navigator.userAgent.match(/MSIE 6.0/)!= null,
