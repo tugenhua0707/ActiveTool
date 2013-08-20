@@ -151,7 +151,9 @@ ActiveTool
 		}else{
 			throw new Error('点击元素传递参数不符合!');
 		}
+		
 		self._init();
+		
 	}
 	
 	// 默认配置
@@ -181,13 +183,20 @@ ActiveTool
 		display: 0
 		
 	};
+	
 	ActiveTool.prototype = {
+	
 		_init: function(){
 			var self = this,
-				cfg = self.config,
-				EVT_SCROLL = 'scroll',
-				EVT_RESIZE = 'resize',
-				divBar;
+			
+			    cfg = self.config,
+			    
+			    EVT_SCROLL = 'scroll',
+			    
+			    EVT_RESIZE = 'resize',
+			    
+			    divBar;
+			    
 			// init divBar node
 			divBar = self.container;
 			
@@ -205,6 +214,7 @@ ActiveTool
 			}
 
 			var topLink = $(cfg.topLink,divBar);
+			
 			if (topLink){
 				// hide focus for ie
 				if (isIE) {
