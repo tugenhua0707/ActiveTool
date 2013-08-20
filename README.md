@@ -115,22 +115,24 @@ ActiveTool
         
         var ActiveTool = (function(win,undefined){
         
-	   var doc = document,
+	     var doc = document,
 	   
-		docBody = doc.body,
+		 docBody = doc.body,
 		
-		isIE = navigator.userAgent.match(/MSIE/)!= null,
+		 isIE = navigator.userAgent.match(/MSIE/)!= null,
 		
-		isIE6 = navigator.userAgent.match(/MSIE 6.0/)!= null,
+		 isIE6 = navigator.userAgent.match(/MSIE 6.0/)!= null,
 		
-		docelem = doc.documentElement || docBody;
+		 docelem = doc.documentElement || docBody;
 
-	function ActiveTool(container,config){
+	    function ActiveTool(container,config){
 	
 		var self = this;
 		
 		if(!(self instanceof ActiveTool)){
+		
 			return new ActiveTool(container,config);
+			
 		}
 		
 		config = $.extend(ActiveTool.Config,config);
@@ -155,18 +157,29 @@ ActiveTool
 	// 默认配置
 
 	ActiveTool.Config = {
+	
 		topLink: '.top',
+		
 		markupType: 0,
+		
 		contentWidth: 1000,
+		
 		paddingWidth: 5,
+		
 		leftOffset: 0,
+		
 		left:0,
+		
 		right:0,
+		
 		YAlign: {
 			top:0
 		},
+		
 		zIndex:99999,
-		display: 0	
+		
+		display: 0
+		
 	};
 	ActiveTool.prototype = {
 		_init: function(){
